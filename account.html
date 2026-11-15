@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Raj House</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">RAJ HOUSE</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="account.html">My Account</a>
+    </nav>
+</header>
+
+<main class="account-page">
+
+    <section class="account-welcome">
+        <h1>My Account</h1>
+        <p>Welcome to your Raj House account.</p>
+    </section>
+
+    <section class="account-profile">
+        <h2>Personal Information</h2>
+
+        <div class="profile-details">
+            <p><strong>Name:</strong> <span id="account-name"></span></p>
+            <p><strong>Email:</strong> <span id="account-email"></span></p>
+        </div>
+
+        <button onclick="logoutUser()" class="logout-btn">
+            Logout
+        </button>
+    </section>
+
+    <section class="order-history">
+        <h2>My Orders</h2>
+        <p class="order-description">
+            View your previous Raj House purchases.
+        </p>
+
+        <div id="order-history-list">
+            Loading orders...
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> Raj House. All rights reserved.</p>
+</footer>
+
+<script src="js/account.js"></script>
+
+</body>
+</html>

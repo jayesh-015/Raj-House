@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Raj House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">RAJ HOUSE</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main class="auth-page">
+    <div class="auth-card">
+        <h1>Welcome Back!</h1>
+        <p class="auth-subtitle">Login to your Raj House account</p>
+
+        <form id="login-form">
+
+            <div class="form-group">
+                <label for="login-email">Email Address</label>
+                <input type="email" id="login-email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="login-password"
+                           placeholder="Enter your password" required>
+                    <button type="button" class="password-toggle"
+                            data-target="login-password">Show</button>
+                </div>
+            </div>
+
+            <p id="login-message" class="auth-message"></p>
+
+            <button type="submit" class="auth-submit">
+                Login
+            </button>
+        </form>
+
+        <p class="auth-switch">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> Raj House. All rights reserved.</p>
+</footer>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

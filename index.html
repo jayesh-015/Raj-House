@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raj House | Kids Fashion Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Welcome to Raj House – Little Styles, Big Smiles!
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            RAJ<span>HOUSE.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">New Arrivals</a>
+            <a href="#about">About Us</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+<a href="account.html">My Account</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#products" class="shop-link">Shop Now</a>
+           <a href="cart.html" class="cart-link">
+    Cart (<span id="cart-count">0</span>)
+</a>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">STYLE FOR LITTLE STARS</p>
+
+                <h1>
+                    Little Looks.<br>
+                    <span>Big Happiness.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover adorable outfits for your little ones.
+                    Comfortable, stylish and made for every special moment.
+                </p>
+
+                <a href="#products" class="primary-btn">
+                    Explore Collection →
+                </a>
+
+                <div class="hero-note">
+                    ✨ Made with love for little ones
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=1000"
+                    alt="Children enjoying their childhood"
+                >
+            </div>
+
+        </section>
+
+        <!-- Categories -->
+        <section class="categories section" id="categories">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+                <h2>Shop By Category</h2>
+                <p>Find something special for every little personality.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600" alt="Girls fashion">
+                    <h3>Girls Collection</h3>
+                    <a href="#products">Explore Collection →</a>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=600" alt="Boys fashion">
+                    <h3>Boys Collection</h3>
+                    <a href="#products">Explore Collection →</a>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600" alt="Baby clothing">
+                    <h3>Baby Collection</h3>
+                    <a href="#products">Explore Collection →</a>
+                </div>
+
+            </div>
+
+        </section>
+
+       
+<!-- Products Section -->
+<section class="products section" id="products">
+
+    <div class="section-heading">
+        <p class="eyebrow">FRESH FROM OUR STORE</p>
+        <h2>Our Latest Collection</h2>
+        <p>Discover beautiful outfits for your little ones.</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="boys">Boys</button>
+        <button class="filter-btn" data-filter="girls">Girls</button>
+        <button class="filter-btn" data-filter="baby">Baby</button>
+    </div>
+
+    <!-- Products will appear here -->
+    <div class="product-grid" id="product-grid"></div>
+
+</section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <p class="eyebrow">OUR LITTLE STORY</p>
+            <h2>Made for Little Moments.</h2>
+            <p>
+                At Raj House, we believe every child deserves to feel
+                comfortable, confident and special. Explore a world
+                of adorable fashion made for childhood.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>RAJ<span>HOUSE.</span></h2>
+        <p>Little Styles, Big Smiles.</p>
+        <p>© <span id="year"></span> Raj House. All rights reserved.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

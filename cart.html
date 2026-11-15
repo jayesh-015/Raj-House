@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Raj House</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="announcement">
+        Welcome to Raj House – Little Styles, Big Smiles!
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            RAJ<span>HOUSE.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#products">Shop</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="index.html" class="shop-link">Continue Shopping</a>
+        </div>
+
+    </header>
+
+    <!-- Cart Page -->
+    <main class="cart-page">
+
+        <div class="cart-heading">
+            <p class="eyebrow">YOUR SHOPPING BAG</p>
+            <h1>Shopping Cart</h1>
+            <p>Review your little one's favourite styles.</p>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-items-section">
+
+                <div class="cart-table-heading">
+                    <h2>Your Products</h2>
+                    <span id="cart-items-count">0 Items</span>
+                </div>
+
+                <div id="cart-items"></div>
+
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery-charge">₹0</span>
+                </div>
+
+                <div class="summary-row total-row">
+                    <strong>Total</strong>
+                    <strong id="cart-total">₹0</strong>
+                </div>
+
+                <button class="checkout-btn" onclick="goToCheckout()">
+                    Proceed to Checkout →
+                </button>
+
+                <p class="secure-note">
+                    ✨ Thank you for shopping with Raj House!
+                </p>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>RAJ<span>HOUSE.</span></h2>
+
+        <p>Little Styles, Big Smiles.</p>
+
+        <p>© <span id="year"></span> Raj House. All rights reserved.</p>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
